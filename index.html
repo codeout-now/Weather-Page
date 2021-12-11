@@ -1,0 +1,318 @@
+<html>
+
+<head>
+	<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+	<link rel=”stylesheet” href=”css/bootstrap.css”>
+	<link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+	<style>
+	#time{
+	font-size:30px;
+	color:#668cff;
+	}
+	#id1{
+	font-size:25px;
+	color:#668cff;
+	}
+	.wday{
+	border:2px solid white;
+	float:left;
+	width:10%;
+	height:85%;
+	margin-left:35px;
+	margin-top:1px;
+	border-radius:30px;
+	background-color:white
+	}
+	.wday:hover
+	{
+	background-color:#99b3ff;
+	}
+	.wimg{
+	width:50px;
+	height:50px;
+	margin-left:30px;
+	margin-top:34px;
+	}
+	#block3{
+	z-index:1;
+	}
+	.icons
+	{
+	width:25px;
+	height:25px;
+	margin-left:13px;
+	margin-top:15px;
+	margin-bottom:5px;
+	}
+	#id2{
+	color:#4d79ff;
+	font-size:15px;
+	font-weight:bold;
+	}
+	#id3{
+	font-size:11px;
+	}
+	.p1{
+	color:green;
+	font-size:19px;
+	margin-left:15px;
+	margin-top:15px;
+	
+	}
+	.d1
+	{
+	width:60px;
+	height:65px;
+	background-color:yellow;
+	float:left;
+	margin-left:9px;
+	border-radius:12px;
+	background-color:#e6ffe6;
+	}
+	.pp{
+	font-size:14px;
+	}
+	.col12
+	{
+	color:#4d79ff;
+	}
+	
+	.col21
+	{
+	color:#a3a3c2;
+	}
+	.d1d:hover
+	{
+	background-color:#E9EF9D;
+	}
+
+	.container{
+        width: 90%;
+        height: 30%;
+        position: relative;
+        margin-left: 14px;
+	margin-top:25px;
+		
+    }
+  
+	.box{
+        width: 100%;
+        height: 40%;            
+        position: absolute;
+        top: 0;
+        left: 0;
+	border-radius:10px;
+        opacity: 0.8;  /* for demo purpose  */
+    }
+
+    .stack-top{
+        z-index: 9;
+        margin: 20px; /* for demo purpose  */
+    }
+
+	</style>
+</head>
+
+<body >
+	<div id="leftdiv" style="background-color:#e6f2ff;width:70%;height:120%;float:left;margin-left:38px" >
+		<div id="block1" style="width:100%;height:23%;">
+			
+			<p  style="margin-left:50px;float:left;margin-top:30px"><span id="time"><b>07:32 AM</b></span><br>
+			<b>Thursday, 09 December, 2021</b>
+			<br><br><img src="light.png" style="width:30px;height:30px"> <span id="id1"><b>Good morning, Divya!</b><span></p>
+			
+			<div style="width:80px;background-color:white;float:right;height:35px;margin-right:50px;margin-top:50px;border:0px solid white;border-radius:25px;">
+				<img src="brightness.png" style="width:25px;height:25px;margin-left:10px;margin-top:5px">
+				<img src="moon.png" style="width:25px;height:25px;margin-left:5px">
+			</div>
+		</div>
+		<div id="block2" style="width:100%;height:25%;">
+			<div class="wday" style="margin-left:30px; ">
+				<img class="wimg" src="sunny.png" >
+				<p align="center" style="margin-top:20px"><b>Sun<br>40<sup>°</sup></b></p>
+			</div>
+			<div class="wday" >
+				<img class="wimg" src="rainy-day.png">
+				<p align="center" style="margin-top:20px"><b>Mon<br>40<sup>°</sup></b></p>
+			</div>
+			<div class="wday"  >
+				<img class="wimg" src="thunder-bolt.png" >
+				<p align="center" style="margin-top:20px"><b>Tue<br>40<sup>°</sup></b></p>
+			</div>
+			<div class="wday" >
+				<img class="wimg" src="cloudy.png">
+				<p align="center" style="margin-top:20px"><b>Wed<br>40<sup>°</sup></b></p>
+			</div>
+			<div class="wday"  >
+				<img class="wimg"  src="wind.png">
+				<p align="center" style="margin-top:20px"><b>Thur<br>40<sup>°</sup></b></p>
+			</div>
+			<div class="wday" >
+				<img class="wimg" src="frost.png">
+				<p align="center" style="margin-top:20px"><b>Fri<br>40<sup>°</sup></b></p>
+			</div>
+			<div class="wday" >
+				<img class="wimg" src="hail.png">
+				<p align="center" style="margin-top:20px"><b>Sat<br>40<sup>°</sup></b></p>
+			</div>
+
+		</div>
+		<div id="block3" style="width:100%;height:25%;">
+			<div style="width:50px;height:230px;background-color: #668cff;z-index:1;border:0px solid  #668cff;border-radius:0px 25px 25px 0px;float:left">
+				<div class="d1d"><a href="#"><img src="application.png" class="icons"></a><br></div>
+				<div class="d1d"><a href="#"><img src="location.png" class="icons" ></a><br></div>
+				<div class="d1d"><a href="#"><img src="setting.png" class="icons" ></a><br></div>
+				<div class="d1d"><a href="#"><img src="help.png" class="icons" ></a><br></div>
+				<div class="d1d"><a href="#"><img src="android.png" class="icons" style="margin-top:20px" ></a></div>
+			</div>
+			<div style="float:left;margin-left:25px;background-color:white;width:450px;height:180px;border-radius:15px">
+				<p style="margin-left:15px;margin-top:15px;float:left"><b>Air Quality Index</b></p>
+				<img src="pin.png" style="width:20px;height:20px;margin-left:90px;margin-top:0.4px">
+				<select name="PLACES" id="PLACES" style="width:150px;margin-top:10px;background-color:white;font-weight:bold;border:0px solid white">
+					<option value="Uttara">Uttara,Dhaka</option>
+					<option value="Pune">Pune,Maharashtra</option>
+					<option value="Hyd">Hyd,Telangana</option>
+					<option value="ATP">ATP,AP</option>
+				</select>
+				<br>
+				<div style="float:left;width:100%;height:40px;">
+					<img src="whistle.png" style="width:30px;height:30px;float:left;margin-left:5px">
+					<p style="float:left;margin-top:2px"><span id="id2">Good</span><br><span id="id3">A perfect day for walk!!<span></p>
+					<button style="width:65px;height:25px;margin-left:160px;margin-top:10px;color:blue;background-color:#f0f5f5;border:0px solid #f0f5f5;border-radius:5px;font-weight:bold">Refresh</button>
+				</div>
+				<div style="float:left;width:100%;height:65px;margin-top:9px">
+				<div style="width:60px;height:65px;background-color:yellow;float:left;margin-left:22px;border-radius:12px;background-color:#e6ffe6">
+				<p class="p1">9.3<br><span class="pp">PM2</span></p>
+				</div>
+				<div class="d1" >
+				<p class="p1">9.3<br><span class="pp">PM10</span></p>
+				</div>
+				<div class="d1" >
+				<p class="p1">9.3<br><span class="pp">SO<sub>2</sub></span></p>
+				</div>
+				<div class="d1" >
+				<p class="p1">9.3<br><span class="pp">NO<sub>2</sub></span></p>
+				</div>
+				<div class="d1" >
+				<p class="p1">9.3<br><span class="pp">O<sub>2</sub></span></p>
+				</div>
+				<div class="d1" >
+				<p class="p1">9.3<br><span class="pp">CO</span></p>
+				</div>
+				</div>
+			</div>
+			<div style="float:right;margin-right:35px;background-color:white;width:470px;height:389px;border-radius:15px;z-index:1">
+				<p style="margin-left:15px;margin-top:15px;float:left"><b>Sunrise & Sunset</b></p>
+				<img src="plus.png" style="width:20px;height:20px;float:right;margin-top:15px;margin-right:40px">
+				<div style="width:80%;height:90px;background-color: #fff2e6;margin-top:50px;margin-left:45px;border-radius:15px">
+					<div style="padding-top:8px;padding-left:10px"><img src="pin.png" style="width:20px;height:20px"><b>Dhaka</b></div>
+					<div style="margin-top:10px;margin-left:10px">
+						<img src="bright.png" style="width:35px;height:35px;float:left;padding-right:5px">
+						<div style="float:left;"><span class="col21">Sunrise</span><br><span class="col12"><b>4:40 AM</b></span></div>
+					</div>
+					<div style="float:right;margin-right:100px">
+						<img src="moony.png" style="width:35px;height:35px;float:left;padding-right:5px">
+						<div style="float:left"><span class="col21">Sunset</span><br><span class="col12"><b>6:53 PM</b></span></div>
+					</div>
+				</div>
+				<div style="width:80%;height:90px;background-color: #fff2e6;margin-top:10px;margin-left:45px;border-radius:15px">
+					<div style="padding-top:8px;padding-left:10px"><img src="pin.png" style="width:20px;height:20px"><b>Tokyo</b></div>
+					<div style="margin-top:10px;margin-left:10px">
+						<img src="bright.png" style="width:35px;height:35px;float:left;padding-right:5px">
+						<div style="float:left"><span class="col21">Sunrise</span><br><span class="col12"><b>4:47 AM</b></span></div>
+					</div>
+					<div style="float:right;margin-right:100px">
+						<img src="moony.png" style="width:35px;height:35px;float:left;padding-right:5px">
+						<div style="float:left"><span class="col21">Sunset</span><br><span class="col12"><b>6:49 PM</b></span></div>
+					</div>
+				</div>
+				<div style="margin-left:45px;margin-top:20px">
+					<div style="float:left"><img src="loci.png" style="width:20px;height:20px;float:left;padding-right:5px">Kabul</div>
+					<div style="float:left;margin-left:60px"><img src="bright.png" style="width:20px;height:20px;float:left;padding-right:5px"> 5:00 AM</div>
+					<div style="float:left;margin-left:60px"><img src="moony.png" style="width:20px;height:20px;float:left;padding-right:5px"> 7:00 PM</div>
+				</div>
+				<br>
+				<div style="margin-left:45px;margin-top:10px">
+					<div style="float:left"><img src="loci.png" style="width:20px;height:20px;float:left;padding-right:5px">Tirana</div>
+					<div style="float:left;margin-left:58px"><img src="bright.png" style="width:20px;height:20px;float:left;padding-right:5px"> 5:01 AM</div>
+					<div style="float:left;margin-left:59px"><img src="moony.png" style="width:20px;height:20px;float:left;padding-right:5px"> 8:04 PM</div>
+				</div>
+				<br>
+				<div style="margin-left:45px;margin-top:10px">
+					<div style="float:left"><img src="loci.png" style="width:20px;height:20px;float:left;padding-right:5px">Algiers</div>
+					<div style="float:left;margin-left:53px"><img src="bright.png" style="width:20px;height:20px;float:left;padding-right:5px">5:50 AM</div>
+					<div style="float:left;margin-left:59px"><img src="moony.png" style="width:20px;height:20px;float:left;padding-right:5px">7:59 PM</div>
+				</div>
+			</div>
+		</div>
+		<div id="block4" style="width:100%;height:27%;">
+		<div style="float:left;margin-left:25px;background-color:white;width:450px;height:160px;border-radius:15px;margin-top:10px">
+			<p style="margin-left:15px;margin-top:3px"><b>Yearly Rainfall</b></p>
+			<div style="width:70%;height:10%;background-color: #b3b3ff;float:left;margin-left:20px"><div style="width:70%;height:100%;background-color: #e6f2ff"></div></div>
+			<div style="width:70%;height:10%;background-color: #b3b3ff;margin-top:7px;float:left;margin-left:20px"><div style="width:50%;height:100%;background-color: #e6f2ff"></div></div>
+			<div style="width:70%;height:10%;background-color: #b3b3ff;margin-top:7px;float:left;margin-left:20px"><div style="width:40%;height:100%;background-color: #e6f2ff"></div></div>
+			<div style="width:70%;height:10%;background-color: #b3b3ff;margin-top:7px;float:left;margin-left:20px"><div style="width:10%;height:100%;background-color: #e6f2ff"></div></div>
+			<div style="width:70%;height:10%;background-color:#b3b3ff;margin-top:7px;float:left;margin-left:20px"><div style="width:30%;height:100%;background-color: #e6f2ff"></div></div>
+
+			</div>
+		</div>
+	</div>
+	<div id="rightdiv" style="background-color:#ececec;width:25%;height:120%;float:left">
+		<input type="text" placeholder="Search" style="width:42%;height:40px;margin-left:30px;margin-top:30px;border-radius:8px;border:0px solid white;background-color: #e0ebeb" >
+		<img src="notification-bell.png" width=40 height=40 style="margin-left:80px;border-radius:10px">
+		<img src="shinchan.png" class="img-circle"width=50 height=50 style="margin-left:1px;border:2px solid black">
+		<br>
+		<div style="width:70%;height:49%;background-color:#2772db;margin-left:55px;margin-top:20px;border-radius:10px">
+			<img src="loc1.png" width=30 height=30 style="margin:10px"><span style="color:white;font-size:19px"><b>Dhaka</b></span><br>
+			<img src="thunder.png" style="width:100px;height:100px;margin-left:70px;margin-top:10px"><br>
+			<p style="color:White;font-size:17px;margin-left:50px;margin-top:15px"><b>Today, 09 December</b><br>
+			<span style="color:white;font-size:50px;margin-left:50px">29<sup>°</sup></span>
+			<span style="color:white;font-size:18px;margin-left:50px"><b>Sunny</b></span></p>
+			<img src="wind1.png" style="width:38px;height:38px;margin-left:30px"><span style="color:white;font-size:15px;margin-left:15px;"><b>  Wind &nbsp; | &nbsp; 19 km/h</b></span><br>
+			<img src="drop.png" style="width:30px;height:30px;margin-left:40px;margin-top:10px"><span style="color:white;font-size:15px;margin-left:15px;"><b>Hum &nbsp; |  &nbsp; 22%</b></span>
+		</div>
+		<div style="width:90%;height:13%;background-color:#f48db4;margin-left:20px;margin-top:20px;border-radius:20px">
+			<div style="padding-top:20px;width:60%;height:100%;float:left;border-radius:20px 0px 0px 20px">
+				<img src="wind1.png" style="width:38px;height:38px;margin-left:10px"><span style="color:white;font-size:15px;margin-left:15px;"><b>  Wind &nbsp; | &nbsp; 15 km/h</b></span><br>
+				<img src="drop.png" style="width:30px;height:30px;margin-left:15px;margin-top:10px"><span style="color:white;font-size:15px;margin-left:27px;"><b>Hum &nbsp;  | &nbsp;  28%</b></span>
+			</div>
+			<div style="width:40%;height:100%;float:right;border-radius:0px 20px 20px 0px">
+			<img src="pin.png" style="width:15px;height:15px;margin-left:10px">
+			<select name="PLACES" id="PLACES" style="width:90px;margin-top:10px;background-color:#f48db4;border:0px solid #f48db4;color:white">
+				<option value="Tokyo">Tokyo</option>
+				<option value="Syndney">Syndney</option>
+				<option value="London">London</option>
+				<option value="Mumbai">Mumbai</option>
+			</select>
+			<p style="margin-top:10px;margin-left:55px;font-size:30px;color:white"><b>26<sup>°</sup></b></p>
+			</div>
+		</div>
+		
+	
+		<div class="container">
+			<div class="box" style="background:#ffebcc;border:2px dashed orange;"></div>
+			<div class="box stack-top" style="background: #ffc266;opacity:1;border:2px solid orange">
+				<div style="padding-top:10px;width:60%;height:100%;float:left;border-radius:20px 0px 0px 20px">
+					<img src="wind1.png" style="width:38px;height:38px;margin-left:10px"><span style="color:white;font-size:15px;margin-left:15px;"><b>  Wind &nbsp; | &nbsp; 17 km/h</b></span><br>
+					<img src="drop.png" style="width:30px;height:30px;margin-left:15px;margin-top:10px"><span style="color:white;font-size:15px;margin-left:27px;"><b>Hum &nbsp;  | &nbsp;  25%</b></span>
+				</div>
+				<div style="width:40%;height:100%;float:right;border-radius:0px 20px 20px 0px">
+					<img src="pin.png" style="width:15px;height:15px;margin-left:10px">
+					<select name="PLACES" id="PLACES" style="width:90px;margin-top:10px;background-color:#ffc266;border:0px solid #f48db4;color:white">
+						<option value="Tokyo">NY </option>
+						<option value="Syndney">Syndney</option>
+						<option value="London">London</option>
+						<option value="Mumbai">Mumbai</option>
+					</select>
+					<p style="margin-top:10px;margin-left:55px;font-size:30px;color:white"><b>31<sup>°</sup></b></p>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
